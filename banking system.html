@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Banking Management System</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    min-height:100vh;
+}
+
+.header{
+    text-align:center;
+    color:white;
+    padding:30px;
+}
+
+.header h1{
+    font-size:40px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:gray;
+    margin-bottom:20px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#1e3c72;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2a5298;
+}
+
+.form-section{
+    width:80%;
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:40px;
+}
+
+.form-section h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+    <h1>🏦 Banking Management System</h1>
+    <p>DBMS Mini Project</p>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>👤 Customer</h2>
+        <p>Add and Manage Customers</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h2>💰 Account</h2>
+        <p>Create Savings & Current Accounts</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h2>🔄 Transactions</h2>
+        <p>Deposit & Withdraw Money</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h2>🏢 Branch</h2>
+        <p>Manage Bank Branches</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h2>📄 Loan</h2>
+        <p>Apply and Track Loans</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h2>👨‍💼 Employee</h2>
+        <p>Manage Employee Records</p>
+        <button>Open</button>
+    </div>
+
+</div>
+
+<div class="form-section">
+
+<h2>Add Customer</h2>
+
+<form>
+
+<input type="text" placeholder="Customer Name">
+
+<input type="text" placeholder="Phone Number">
+
+<input type="text" placeholder="Address">
+
+<button type="submit">Add Customer</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
